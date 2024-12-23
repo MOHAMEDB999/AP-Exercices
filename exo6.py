@@ -1,14 +1,9 @@
-print("Runner1 Info :")
-Rname1 = input("Name: ")
-t1 = float(input("Time (in seconds): "))
+prix = float(input("Please type in a price: "))
+if prix < 0 :
+    print("the price cannot be negative ")
+    exit()
+dinar = int(prix)
+centime = round((prix - dinar) * 100)
 
-print("Runner2 Info :")
-Rname2 = input("Name: ")
-t2 = float(input("Time (in seconds): "))
-
-if t1 < t2:
-    print(f"The faster runner is {Rname1}")
-elif t2 < t1:
-    print(f"The faster runner is {Rname2}")
-else:
-    print(f"{Rname1} and {Rname2} have the same time")
+print(f"Dinars: {dinar}")
+print(f"Centimes: {centime}")
